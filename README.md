@@ -20,7 +20,7 @@ export GITHUB_TOKEN="TU_TOKEN_DE_GITHUB_CON_ACCESO_DE_LECTURA"
 export ENCRYPT_KEY="CLAVE_COMPARTIDA_DE_LA_PRACTICA"
 ```
 
-`ENCRYPT_KEY` debe coincidir con la clave acordada para la evaluación. `GITHUB_TOKEN` es un personal access token con permiso de lectura a este repositorio. No subas ninguno de esos valores a Git.
+`ENCRYPT_KEY` debe coincidir con la clave acordada para la evaluación; si no se define, el proyecto usa la clave de demostración especificada en el enunciado. Esa clave solo sirve para esta práctica y no debe reutilizarse. `GITHUB_TOKEN` es un personal access token con permiso de lectura a este repositorio. No subas el token ni credenciales reales a Git.
 
 ## Iniciar el servidor
 
