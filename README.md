@@ -28,7 +28,7 @@ export ENCRYPT_KEY="CLAVE_COMPARTIDA_DE_LA_PRACTICA"
 mvn spring-boot:run
 ```
 
-El Config Server queda disponible en `http://localhost:8888`. Para consultar el perfil dev:
+El Config Server queda disponible en `http://localhost:8888`. Para comprobar que GitHub sirve los perfiles dev/prod, las claves demo se desencriptan y Actuator responde, ejecuta en otra terminal: `python3 scripts/validate-config.py`. Para consultar manualmente el perfil dev:
 
 ```bash
 curl http://localhost:8888/cita-service/dev
@@ -37,9 +37,9 @@ curl http://localhost:8888/cita-service/dev
 El endpoint `/encrypt` recibe texto plano y devuelve ciphertext. Ejemplo para generar una nueva clave de demostración:
 
 ```bash
-curl --silent --request POST \\
-  --header 'Content-Type: text/plain' \\
-  --data-binary 'demo-api-key-dev-grupo5' \\
+curl --silent --request POST \
+  --header 'Content-Type: text/plain' \
+  --data-binary 'demo-api-key-dev-grupo5' \
   http://localhost:8888/encrypt
 ```
 
