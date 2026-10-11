@@ -21,7 +21,7 @@ export ENCRYPT_KEY="ClaveSecretaSalud2026"
 mvn spring-boot:run
 ```
 
-El servidor escucha en `http://localhost:8888`. La configuración se consulta en `/{application}/{profile}`; por ejemplo, `http://localhost:8888/cita-service-grupo5/dev`.
+El servidor escucha en `http://localhost:8888`. La configuración se consulta en `/{application}/{profile}`. El enunciado pide los archivos `cita-service-dev.properties` y `cita-service-prod.properties`; por eso el cliente Citas debe solicitar la configuración con `spring.cloud.config.name=cita-service`, aunque conserve `spring.application.name=cita-service-grupo5` para registrarse en Eureka. La URL de consulta será `http://localhost:8888/cita-service/dev`.
 
 ## Encriptar valores
 
