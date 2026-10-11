@@ -10,10 +10,10 @@ Este repositorio privado también puede actuar como repositorio Git de propiedad
 export CONFIG_REPO_URI="https://github.com/guallycanazas/config-server-grupo5.git"
 export GITHUB_USERNAME="guallycanazas"
 export GITHUB_TOKEN="TU_TOKEN_DE_GITHUB"
-export ENCRYPT_KEY="ClaveSecretaSalud2026"
+export ENCRYPT_KEY="VALOR_DE_LA_CLAVE_COMPARTIDA"
 ```
 
-`GITHUB_TOKEN` debe tener acceso de lectura al repositorio. No guardes el token ni la clave en archivos versionados. Para la evaluación, todos los microservicios que lean secretos cifrados deben usar la misma `ENCRYPT_KEY`.
+`GITHUB_TOKEN` debe tener acceso de lectura al repositorio. Reemplaza `VALOR_DE_LA_CLAVE_COMPARTIDA` por la clave indicada para la práctica. No guardes el token ni la clave en archivos versionados. Para la evaluación, todos los microservicios que lean secretos cifrados deben usar la misma `ENCRYPT_KEY`.
 
 ## Iniciar
 
